@@ -1,0 +1,115 @@
+{
+  "api": {
+    "timeout": "La demande a expiré. Veuillez vérifier votre connexion Internet.",
+    "timeoutRetry": "La demande a expiré. Veuillez vérifier votre connexion Internet et réessayer.",
+    "invalidKey": "Clé API invalide",
+    "noKey": "Veuillez entrer une clé API.",
+    "validationFailed": "La validation de la clé API a échoué",
+    "networkError": "Erreur réseau. Veuillez vérifier votre connexion.",
+    "connectionFailed": "Impossible de valider la clé API. Vérifiez votre connexion Internet.",
+    "unsupportedProvider": "Fournisseur non pris en charge"
+  },
+  "task": {
+    "notFound": "Tâche introuvable",
+    "startFailed": "Impossible de démarrer la tâche",
+    "cancelFailed": "Impossible d'annuler la tâche",
+    "taskFailed": "La tâche a échoué",
+    "noActiveTask": "Aucune tâche active à continuer",
+    "noSession": "Aucune session à continuer - veuillez démarrer une nouvelle tâche",
+    "sendMessageFailed": "Impossible d'envoyer le message"
+  },
+  "adapter": {
+    "cliNotFound": "OpenCode CLI n'est pas disponible. Le CLI groupé est peut-être manquant ou corrompu. Veuillez réinstaller l'application.",
+    "disposed": "L'adaptateur a été supprimé et ne peut pas démarrer de nouvelles tâches",
+    "noActiveProcess": "Aucun processus actif",
+    "exitWithCode": "OpenCode CLI s'est terminé avec le code {{code}}"
+  },
+  "validation": {
+    "mustBeString": "{{field}} doit être une chaîne de caractères",
+    "required": "{{field}} est requis",
+    "exceedsLength": "{{field}} dépasse la longueur maximale",
+    "unsupportedProvider": "Fournisseur de clé API non pris en charge",
+    "untrustedWindow": "Fenêtre non fiable",
+    "focusedWindowRequired": "La demande IPC doit provenir de la fenêtre active"
+  },
+  "provider": {
+    "notReady": "Aucun fournisseur n'est prêt. Veuillez connecter un fournisseur et sélectionner un modèle dans les Paramètres.",
+    "noModelsEndpoint": "Aucun point de terminaison de modèles configuré pour ce fournisseur",
+    "noApiKey": "Aucune clé API trouvée pour ce fournisseur"
+  },
+  "ollama": {
+    "connectionFailed": "La connexion a échoué",
+    "noModels": "Aucun modèle trouvé",
+    "saveFailed": "Échec de la sauvegarde",
+    "invalidUrl": "Format d'URL invalide",
+    "protocolNotAllowed": "Seuls les URL http et https sont autorisés",
+    "invalidConfig": "Configuration Ollama invalide",
+    "modelsArray": "Configuration Ollama invalide : les modèles doivent être un tableau",
+    "invalidModelFormat": "Configuration Ollama invalide : format de modèle invalide",
+    "connectionTimeout": "La connexion a expiré. Assurez-vous qu'Ollama est en cours d'exécution.",
+    "cannotConnect": "Impossible de se connecter à Ollama : {{message}}"
+  },
+  "bedrock": {
+    "invalidCredentials": "Identifiants invalides",
+    "saveFailed": "Échec de la sauvegarde des identifiants",
+    "invalidAuthType": "Type d'authentification invalide",
+    "invalidAwsCredentials": "Identifiants AWS invalides. Veuillez vérifier votre ID de clé d'accès et votre clé d'accès secrète.",
+    "accessDenied": "Accès refusé. Assurez-vous que vos identifiants AWS ont les permissions Bedrock.",
+    "profileNotFound": "Profil AWS introuvable. Vérifiez votre fichier ~/.aws/credentials.",
+    "accessKeyRequired": "L'ID de clé d'accès et la clé d'accès secrète sont requis",
+    "profileNameRequired": "Le nom du profil est requis",
+    "apiKeyRequired": "La clé API est requise"
+  },
+  "model": {
+    "invalidConfig": "Configuration du modèle invalide"
+  },
+  "litellm": {
+    "invalidConfig": "Configuration LiteLLM invalide",
+    "modelsArray": "Configuration LiteLLM invalide : les modèles doivent être un tableau",
+    "invalidModelFormat": "Configuration LiteLLM invalide : format de modèle invalide"
+  },
+  "lmstudio": {
+    "notConfigured": "Aucun LM Studio configuré"
+  },
+  "azureFoundry": {
+    "baseUrlRequired": "Configuration Azure Foundry invalide : baseUrl est requis",
+    "deploymentRequired": "Configuration Azure Foundry invalide : deploymentName est requis",
+    "invalidAuthType": "Configuration Azure Foundry invalide : authType doit être api-key ou entra-id",
+    "invalidEnabled": "Configuration Azure Foundry invalide : enabled doit être un booléen",
+    "invalidBaseUrl": "Configuration Azure Foundry invalide : format d'URL de base invalide"
+  },
+  "connector": {
+    "protocolRequired": "L'URL du connecteur doit utiliser http:// ou https://",
+    "invalidUrl": "URL de connecteur invalide : {{url}}"
+  },
+  "settings": {
+    "invalidDebugFlag": "Indicateur de mode de débogage invalide",
+    "invalidTheme": "Valeur de thème invalide",
+    "invalidBaseUrl": "URL de base invalide"
+  },
+  "i18n": {
+    "unsupportedLanguage": "Langue non prise en charge"
+  },
+  "url": {
+    "protocolNotAllowed": "Seuls les URL http et https sont autorisés"
+  },
+  "permission": {
+    "denied": "Permission refusée",
+    "required": "Permission requise"
+  },
+  "generic": {
+    "unknown": "Une erreur inconnue s'est produite",
+    "tryAgain": "Veuillez réessayer"
+  },
+  "app": {
+    "mustRunInDesktop": "Cette application doit être exécutée dans l'application de bureau Accomplish.",
+    "unableToStart": "Impossible de démarrer",
+    "updateRequired": "Mise à jour requise",
+    "schemaNewerMessage": "Ces données ont été créées par une version plus récente d'Accomplish (schéma v{{version}}).",
+    "schemaNewerDetail": "Votre application prend en charge jusqu'au schéma v{{version}}. Veuillez mettre à jour Accomplish pour continuer."
+  },
+  "auth": {
+    "sessionExpired": "Session {{provider}} expirée",
+    "reLoginTo": "Reconnectez-vous à {{provider}}"
+  }
+}

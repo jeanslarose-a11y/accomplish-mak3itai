@@ -1,0 +1,97 @@
+{
+  "title": "Paramètres",
+  "theme": {
+    "title": "Thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "language": {
+    "title": "Langue"
+  },
+  "advanced": "Avancé",
+  "provider": {
+    "title": "Fournisseur",
+    "configure": "Configurer",
+    "selectModel": "Sélectionner un modèle",
+    "current": "Actuel",
+    "change": "Changer",
+    "noModelSelected": "Aucun modèle sélectionné",
+    "noProvider": "Aucun fournisseur",
+    "apiKey": "Clé API",
+    "enterApiKey": "Entrez votre clé API",
+    "baseUrl": "URL de base",
+    "enterBaseUrl": "Entrez l'URL de base",
+    "modelId": "ID du modèle",
+    "enterModelId": "Entrez l'ID du modèle",
+    "save": "Sauvegarder",
+    "cancel": "Annuler",
+    "remove": "Supprimer",
+    "add": "Ajouter un fournisseur",
+    "select": "Sélectionner un fournisseur",
+    "custom": "Personnalisé",
+    "test": "Tester",
+    "testing": "Test en cours...",
+    "connected": "Connecté",
+    "disconnected": "Déconnecté",
+    "connectionFailed": "Connexion échouée",
+    "invalidKey": "Clé API invalide",
+    "noKey": "Veuillez entrer une clé API",
+    "validationFailed": "La validation de la clé API a échoué",
+    "networkError": "Erreur réseau",
+    "connectionError": "Erreur de connexion"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "enabled": "Activées",
+    "disabled": "Désactivées"
+  },
+  "autoUpdate": {
+    "title": "Mises à jour automatiques",
+    "enabled": "Activées",
+    "disabled": "Désactivées"
+  },
+  "debugMode": {
+    "title": "Mode débogage",
+    "enabled": "Activé",
+    "disabled": "Désactivé"
+  },
+  "experimental": {
+    "title": "Fonctionnalités expérimentales",
+    "enabled": "Activées",
+    "disabled": "Désactivées"
+  },
+  "data": {
+    "title": "Données",
+    "export": "Exporter les données",
+    "import": "Importer les données",
+    "clear": "Effacer toutes les données",
+    "confirmClear": "Voulez-vous vraiment effacer toutes les données? Cette action est irréversible."
+  },
+  "about": {
+    "title": "À propos",
+    "version": "Version",
+    "checkUpdate": "Vérifier les mises à jour",
+    "updateAvailable": "Mise à jour disponible",
+    "upToDate": "À jour",
+    "download": "Télécharger",
+    "changelog": "Journal des modifications",
+    "license": "Licence",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  },
+  "sidebar": {
+    "general": "Général",
+    "providers": "Fournisseurs",
+    "appearance": "Apparence",
+    "data": "Données",
+    "about": "À propos"
+  },
+  "sections": {
+    "general": "Paramètres généraux",
+    "providers": "Fournisseurs",
+    "appearance": "Apparence",
+    "data": "Données",
+    "about": "À propos"
+  }
+}

@@ -27,8 +27,17 @@ import zhCNHistory from '@locales/zh-CN/history.json';
 import zhCNErrors from '@locales/zh-CN/errors.json';
 import zhCNSidebar from '@locales/zh-CN/sidebar.json';
 
+// Static French Canadian locale imports
+import frCACommon from '@locales/fr-CA/common.json';
+import frCAHome from '@locales/fr-CA/home.json';
+import frCASettings from '@locales/fr-CA/settings.json';
+import frCAExecution from '@locales/fr-CA/execution.json';
+import frCAHistory from '@locales/fr-CA/history.json';
+import frCAErrors from '@locales/fr-CA/errors.json';
+import frCASidebar from '@locales/fr-CA/sidebar.json';
+
 // Supported languages and namespaces
-export const SUPPORTED_LANGUAGES = ['en', 'zh-CN'] as const;
+export const SUPPORTED_LANGUAGES = ['en', 'zh-CN', 'fr-CA'] as const;
 export const NAMESPACES = [
   'common',
   'home',
@@ -64,13 +73,16 @@ function resolveStoredLanguage(): SupportedLanguage {
     return 'en';
   }
   const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
-  if (stored === 'en' || stored === 'zh-CN') {
+  if (stored === 'en' || stored === 'zh-CN' || stored === 'fr-CA') {
     return stored;
   }
   // 'auto' or missing — detect from browser
   const nav = typeof navigator !== 'undefined' ? navigator.language : 'en';
   if (nav.startsWith('zh')) {
     return 'zh-CN';
+  }
+  if (nav.startsWith('fr')) {
+    return 'fr-CA';
   }
   return 'en';
 }
@@ -112,6 +124,15 @@ export async function initI18n(): Promise<void> {
             errors: zhCNErrors as Record<string, unknown>,
             sidebar: zhCNSidebar as Record<string, unknown>,
           },
+          'fr-CA': {
+            common: frCACommon as Record<string, unknown>,
+            home: frCAHome as Record<string, unknown>,
+            settings: frCASettings as Record<string, unknown>,
+            execution: frCAExecution as Record<string, unknown>,
+            history: frCAHistory as Record<string, unknown>,
+            errors: frCAErrors as Record<string, unknown>,
+            sidebar: frCASidebar as Record<string, unknown>,
+          },
         },
         lng: initialLanguage,
         fallbackLng: 'en',
@@ -148,7 +169,7 @@ export async function initI18n(): Promise<void> {
 /**
  * Change language and persist to localStorage
  */
-export async function changeLanguage(language: 'en' | 'zh-CN' | 'auto'): Promise<void> {
+export async function changeLanguage(language: 'en' | 'zh-CN' | 'fr-CA' | 'auto'): Promise<void> {
   const resolvedLanguage = language === 'auto' ? resolveAutoLanguage() : language;
   localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
   await i18n.changeLanguage(resolvedLanguage);
@@ -158,12 +179,12 @@ export async function changeLanguage(language: 'en' | 'zh-CN' | 'auto'): Promise
 /**
  * Get the current language preference from localStorage
  */
-export function getLanguagePreference(): 'en' | 'zh-CN' | 'auto' {
+export function getLanguagePreference(): 'en' | 'zh-CN' | 'fr-CA' | 'auto' {
   if (typeof localStorage === 'undefined') {
     return 'auto';
   }
   const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
-  if (stored === 'en' || stored === 'zh-CN' || stored === 'auto') {
+  if (stored === 'en' || stored === 'zh-CN' || stored === 'fr-CA' || stored === 'auto') {
     return stored;
   }
   return 'auto';
@@ -173,6 +194,9 @@ function resolveAutoLanguage(): SupportedLanguage {
   const nav = typeof navigator !== 'undefined' ? navigator.language : 'en';
   if (nav.startsWith('zh')) {
     return 'zh-CN';
+  }
+  if (nav.startsWith('fr')) {
+    return 'fr-CA';
   }
   return 'en';
 }

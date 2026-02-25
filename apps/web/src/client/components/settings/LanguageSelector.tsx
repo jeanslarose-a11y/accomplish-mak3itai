@@ -15,6 +15,7 @@ import { cn } from '@/lib/utils';
 const AUTO_LABELS: Record<string, string> = {
   en: 'Auto (System)',
   'zh-CN': '自动（跟随系统）',
+  'fr-CA': 'Auto (Système)',
 };
 const AUTO_FALLBACK = 'Auto (System)';
 
@@ -29,6 +30,7 @@ const LANGUAGE_OPTIONS = [
   { value: 'auto' as const, label: autoLabel },
   { value: 'en' as const, label: 'English' },
   { value: 'zh-CN' as const, label: '简体中文' },
+  { value: 'fr-CA' as const, label: 'Français (Canada)' },
 ];
 
 type LanguageValue = (typeof LANGUAGE_OPTIONS)[number]['value'];

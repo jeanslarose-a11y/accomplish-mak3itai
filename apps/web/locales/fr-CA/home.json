@@ -1,0 +1,61 @@
+{
+  "title": "Qu'allez-vous accomplir aujourd'hui?",
+  "inputPlaceholder": "Décrivez une tâche et laissez l'IA faire le reste",
+  "plusMenu": {
+    "addContent": "Ajouter du contenu",
+    "attachFiles": "Joindre des fichiers",
+    "soon": "Bientôt",
+    "useSkills": "Utiliser des compétences",
+    "connectors": "Connecteurs",
+    "noConnectors": "Aucun connecteur pour l'instant",
+    "manage": "Gérer"
+  },
+  "examplePrompts": "Exemples de prompts",
+  "useCases": {
+    "calendarPrepNotes": {
+      "title": "Notes de préparation au calendrier",
+      "description": "Revoir les réunions de demain et rédiger un document de notes de préparation.",
+      "prompt": "Consulte mon Google Calendar pour les réunions de demain et rédige des notes de préparation dans un nouveau Google Doc."
+    },
+    "inboxPromoCleanup": {
+      "title": "Nettoyage des promotions dans la boîte de réception",
+      "description": "Supprimer les courriels promotionnels des dernières 24 heures.",
+      "prompt": "Va dans ma boîte de réception Gmail et supprime tous les courriels promotionnels des dernières 24 heures."
+    },
+    "competitorPricingDeck": {
+      "title": "Présentation des prix concurrents",
+      "description": "Analyser les prix des concurrents et rédiger une diapositive avec des recommandations.",
+      "prompt": "Extrais les prix et fonctionnalités de ces 5 sites concurrents [liste des URL], sauvegarde dans un CSV, analyse nos écarts de prix, et rédige une diapositive de recommandation dans Google Slides pour la réunion de lundi."
+    },
+    "notionApiAudit": {
+      "title": "Audit API Notion",
+      "description": "Analyser un wiki Notion pour trouver les anciennes mentions d'API avec des liens directs.",
+      "prompt": "Parcours ce wiki Notion à [URL] et trouve toutes les mentions de l'ancienne API, en les listant avec les liens des pages."
+    },
+    "stagingVsProdVisual": {
+      "title": "Vérification visuelle Staging vs Production",
+      "description": "Comparer les versions staging et production avec des captures d'écran.",
+      "prompt": "Compare mon site de staging à [URL] avec la production à [URL] et fais des captures d'écran des différences visuelles."
+    },
+    "prodBrokenLinks": {
+      "title": "Liens brisés en production",
+      "description": "Vérifier mon site web pour trouver les liens brisés.",
+      "prompt": "Ouvre [URL], clique sur chaque lien, et signale toutes les erreurs 404."
+    },
+    "portfolioMonitoring": {
+      "title": "Surveillance du portefeuille",
+      "description": "Surveiller les prix des actions et alerter en cas de baisses et de hausses.",
+      "prompt": "Surveille mon portefeuille d'actions sur [site de courtage], alerte sur les baisses et les hausses de prix."
+    },
+    "jobApplicationAutomation": {
+      "title": "Automatisation des candidatures",
+      "description": "Filtrer les emplois et soumettre des candidatures avec des profils sauvegardés.",
+      "prompt": "Trouve des offres d'emploi sur Indeed pour [requête], trie par salaire, et postule aux 5 premières avec mon profil."
+    },
+    "eventCalendarBuilder": {
+      "title": "Constructeur de calendrier d'événements",
+      "description": "Sélectionner les meilleurs événements et les ajouter au calendrier.",
+      "prompt": "Extrais les listes d'événements d'Eventbrite, filtre par emplacement, et ajoute les 5 meilleurs à mon calendrier."
+    }
+  }
+}
